@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: #f7f9ff;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Red Hat Display';
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container{
+    width: 450px;
+    height: 697px;
+    border-radius: 20px;
+    background: white;
+}
+
+.image{
+    align-items: center;
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 220px;
+}
+
+.order-title{   
+    width: 354px;
+    height: 37px;
+    margin: 45px 48px 17px 48px;
+    display: flex;
+    justify-content: center;
+}
+.title-txt{
+    font-size: 28px;
+    font-weight: 900;
+    color: #1f2e55;
+    line-height: 37px;
+}
+.txt{   
+    width: 354px;
+    height: 78px;
+    margin: 0 48px 20px 48px;
+    display: flex;
+    justify-content: center;
+}
+.txt-full{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #717fa6;
+    line-height: 26px;
+}
+
+.price-container{
+    width: 354px;
+    height: 98px;
+    border-radius: 11px;
+    background: #f7f9ff;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.icon-music{
+    width: 48px;
+    height: 48px;
+    margin: 25px 20px 25px 25px;
+}
+.annual-container{
+    display: grid;
+    width: 92px;
+    height: 48px;
+    margin: 25px 94px 25px 0;
+}
+.txt-annual{
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1f2e55;
+}
+.txt-price{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #717fa6;
+}
+.change{
+    font-weight: 700;
+    font-size: 14px;
+    color: #382ae1;
+}
+.payment{
+    width: 354px;
+    height: 50px;
+    border-radius: 11px;
+    background-color: #382ae1;
+    align-items: center;
+    margin: 32px auto;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+}
+.txt-proceed{
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+}
+.cancel-order{
+    width: 96px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #717fa6;
+    line-height: 20px;
+    margin: 32px 178px 48px 176px;
+}
+.payment:hover{
+    background: #766cf1;
+}
+a:hover{
+    color: #766cf1;
+    text-decoration: none;
+}
+@media only screen and (max-width: 640px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    .container{
+        height: 567px;
+        width: 327px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    }
+    .image{
+        height: 160px;
+        width: 327px;
+     }
+     .payment{
+        margin: 24px 24px 24px 24px;
+        width: 279px;
+     }
+     .txt{
+         width: 263px;
+         height: 75px;
+         margin: 0 32px 24px 32px;
+     }
+     .order-title{
+         margin: 32px 32px 16px 32px;
+        width: 263px;
+        height: 29px;
+     }
+
+     .title-txt{
+         font-size: 22px;
+     }
+     .price-container{
+         margin: 0 24px 0 24px;
+         height: 81px;
+        width: 279px;
+        border-radius: 11px;
+     }
+     .txt-full{
+         font-size: 15px;
+     }
+     .txt-annual, .txt-price{
+         font-size: 14px;
+         line-height: 18px;
+     }
+     .annual-container{
+        width: 81px;
+        height: 40px;
+        margin: 21px 50px 20px 0;
+    }
+    .change{
+        font-size: 13px;
+    }
+    .icon-music{
+        margin: 17px 20px 16px 16px;
+    }
+    .cancel-order{
+        margin: 24px 116px 3px 115px;
+    }
+}
